@@ -8,7 +8,7 @@ void Copter::set_auto_armed(bool b)
         return;
 
     ap.auto_armed = b;
-    if(b){
+    if (b) {
         AP::logger().Write_Event(LogEvent::AUTO_ARMED);
     }
 }
